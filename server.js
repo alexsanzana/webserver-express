@@ -5,7 +5,7 @@ const hbs = require('hbs');
 require('./hbs/helpers');
 
 // obtener el puerto para subir a heroku
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 
 // creacion de midelware
 app.use(express.static(__dirname + '/public'));
